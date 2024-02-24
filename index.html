@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,4 +15,126 @@
     Semester: 7th
     <div id="root"></div>
   </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    section {
+      padding: 20px;
+    }
+    
+    .project {
+      display: flex;
+      align-items: center;
+    }
+    
+    .project img {
+      max-width: 100%;
+      margin-right: 20px;
+    }
+    
+    .project-info {
+      flex: 1;
+    }
+    
+    form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    form input[type="submit"] {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    form input[type="submit"]:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about-me">
+    <h2>About Me</h2>
+    <p>Here you can put a brief description of yourself.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <img src="project1.jpg" alt="Project 1">
+      <div class="project-info">
+        <h3>Project 1</h3>
+        <p>Description of Project 1</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="project2.jpg" alt="Project 2">
+      <div class="project-info">
+        <h3>Project 2</h3>
+        <p>Description of Project 2</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="#">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+</body>
 </html>
